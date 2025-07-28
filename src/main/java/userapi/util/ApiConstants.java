@@ -1,4 +1,4 @@
-package util;
+package userapi.util;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;

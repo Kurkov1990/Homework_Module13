@@ -1,4 +1,4 @@
-package task1.model;
+package userapi.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

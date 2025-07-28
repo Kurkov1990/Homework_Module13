@@ -1,6 +1,6 @@
-package task1;
+package userapi;
 
-import task1.model.User;
+import userapi.model.User;
 
 public class App {
 
@@ -31,6 +31,13 @@ public class App {
 
         boolean deleted = client.deleteUser(createdUser.getId());
         System.out.println("Deleted successfully: " + deleted);
+
+        printSeparator();
+        System.out.println("Comments for user 1:");
+        client.downloadLatestPostComments(1);
+
+        printSeparator();
+        client.printOpenTodosForUser(2);
     }
 
     private static void printSeparator() {
